@@ -3,7 +3,7 @@ name: shellcheck
 on:
   push:
     branches:
-      - "!main"
+      - "!master"
   pull_request:
   workflow_call:
   workflow_dispatch:
@@ -17,6 +17,6 @@ jobs:
       - uses: rojopolis/spellcheck-github-actions@v0
         name: Spellcheck
         with:
-          config_path: config/.spellcheck.yml
+          config_path: config/spellcheck/.spellcheck.yml
           # source_files: source/scanning.md source/triggers.md
           task_name: Markdown
