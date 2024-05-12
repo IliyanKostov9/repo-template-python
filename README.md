@@ -8,6 +8,22 @@ TODO: Repository contains the agreed folder structure that the project should co
 Each folder reflects an Azure resource.
 Please remove unnecessary folders from the repository.
 
+
+
+1. Installation process
+
+
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip && pip install pip-tools
+pip-compile --output-file=requirements.txt requirements.in
+python -m pip install -r requirements.txt
+
+```
+
+
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 
 1. Installation process
