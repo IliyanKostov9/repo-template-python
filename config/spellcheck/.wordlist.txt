@@ -1,7 +1,0 @@
-TODO
-readme
-Chakra
-IliyanK
-Changelog
-txt
-venv
