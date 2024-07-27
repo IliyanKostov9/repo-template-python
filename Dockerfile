@@ -10,7 +10,7 @@ VOLUME /tmp
 COPY . /app
 
 LABEL org.opencontainers.image.source=https://github.com/IliyanKostov9/repo-template-python \
-	version="0.0.1-RELEASE" \
+	version="0.0.1.RELEASE" \
 	description="Sample docker image for python"
 
 ENTRYPOINT [ "make","run" ]
