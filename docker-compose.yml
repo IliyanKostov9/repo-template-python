@@ -1,0 +1,19 @@
+version: "3.0"
+services:
+  hello-world:
+    image: iliyankostov9/repo-template-python
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: []
+    depends_on: []
+    # env_file:
+    #   - path: ./.env
+    #     required: False
+    networks:
+      - hello-world-network
+    volumes: []
+
+networks:
+  hello-world-network:
+# volumes:

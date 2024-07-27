@@ -1,0 +1,21 @@
+[project]
+name = "repo-template-python"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "iliyan-kostov", email = "iliyan.kostov@email.ikostov.org"},
+]
+dependencies = [
+    "typing==3.7.4.3",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+plugins = [
+    #
+]
