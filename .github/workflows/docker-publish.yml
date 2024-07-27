@@ -41,7 +41,7 @@ jobs:
           file: ./Dockerfile
           push: true
           # tags: ${{ steps.meta.outputs.tags }}
-          tags: $(echo ${{ env.REGISTRY }} | awk '{print tolower($0)}')/${{ env.IMAGE_NAME }}:latest
+          tags: iliyankostov9/${{ env.IMAGE_NAME }}:latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation
