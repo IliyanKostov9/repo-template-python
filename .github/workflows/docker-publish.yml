@@ -40,8 +40,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          # tags: ${{ steps.meta.outputs.tags }}
-          tags: iliyankostov9/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation
